@@ -1,0 +1,193 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to bottom, orange, orangered);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo {
+    max-width: 60%;
+    margin: 30px auto 100px;
+}
+
+.todo h1 {
+    position: relative;
+    color: #555;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    min-width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 3px #999;
+}
+
+.todo>label {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#itemInput {
+    border: none;
+    border-bottom: 1px solid #fff;
+    min-width: 100%;
+    background-color: inherit;
+    color: #fff;
+    max-width: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#addItem {
+    position: relative;
+    min-width: 100%;
+    margin: 10px auto;
+    background-color: #147efb;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #555;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px;
+    transition: all ease 0.3s;
+    outline: none;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+#addItem:hover {
+    background-color: hsl(212, 97%, 43%);
+}
+
+
+#addItem::-moz-focus-inner {
+    border: 0;
+}
+
+.list {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    box-shadow: 0 1px 2px 0 #333;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: all ease 0.3s;
+}
+
+.list:hover {
+    background-color: hsl(0, 1%, 90%);
+}
+
+.list span {
+    display: inline-block;
+    padding-left: 5%;
+    color: #555;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list>.delete {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    border: none;
+    background-color: red;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #fff;
+    padding: 0;
+    min-width: 10%;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+
+.list>.delete:hover {
+    background-color: hsl(0, 100%, 40%);
+}
+
+.list>.delete::-moz-focus-inner {
+    border: 0;
+}
+
+.list>input[type="checkbox"].checkbox {
+    display: inline-block;
+    position: relative;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 3px solid #30d158;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.list>input[type="checkbox"].checkbox:checked {
+    border: 3px solid #30d158;
+    color: #30d158;
+    background-color: #fafafa;
+    outline: none;
+}
+
+
+.list>input[type="checkbox"].checkbox:checked:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    color: #30d158;
+    outline: none;
+
+
+}
+
+.list>span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 768px) {
+    .todo {
+        min-width: 70%;
+    }
+
+    .list>.delete {
+        min-width: 15%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .todo {
+        min-width: 80%;
+    }
+
+    .list>.delete {
+        min-width: 20%;
+    }
+}
