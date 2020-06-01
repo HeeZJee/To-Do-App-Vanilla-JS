@@ -32,4 +32,4 @@ jobs:
       run:  npm install -g surge
         
     - name:  Deploying on surge
-      run:  surge ./ heezjee-todo-remote.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run:  surge ./To-Do-App-Vanilla-JS heezjee-todo-remote.surge.sh --token ${{secrets.SURGE_TOKEN}}
