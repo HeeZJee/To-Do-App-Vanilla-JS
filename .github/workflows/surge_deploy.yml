@@ -34,4 +34,4 @@ jobs:
       
     # Runs a set of commands using the runners shell
     - name:  Deploying on surge
-      run:  surge ./ ${{secrets.DOMAIN_NAME}} --token 0153553da72415fc410b644d87001bbb
+      run:  surge ./ ${{secrets.DOMAIN_NAME}} --token ${{secrets.SURGE_TOKEN}}
