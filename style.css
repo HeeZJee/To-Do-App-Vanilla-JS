@@ -3,7 +3,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(to bottom, orange, orangered);
+    background-image: linear-gradient(to bottom, #fff, #ccc);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -36,7 +36,7 @@ li {
 }
 
 .todo>label {
-    color: #fff;
+    color: #333;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -46,7 +46,7 @@ li {
     border-bottom: 1px solid #fff;
     min-width: 100%;
     background-color: inherit;
-    color: #fff;
+    color: #333;
     max-width: 80px;
     padding: 10px;
     box-sizing: border-box;
@@ -98,8 +98,12 @@ li {
 .list span {
     display: inline-block;
     padding-left: 5%;
+    padding-right: 19%;
     color: #555;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .list>.delete {
@@ -110,7 +114,7 @@ li {
     bottom: 0;
     text-align: center;
     border: none;
-    background-color: red;
+    background-color: #a40000;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     color: #fff;
@@ -161,14 +165,6 @@ li {
     outline: none;
 
 
-}
-
-.list>span {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    vertical-align: middle;
 }
 
 
