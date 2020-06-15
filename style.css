@@ -97,7 +97,7 @@ li {
 
 .list span {
     display: inline-block;
-    padding-left: 5%;
+    padding-left: 0.5rem;
     padding-right: 19%;
     color: #555;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -114,7 +114,7 @@ li {
     bottom: 0;
     text-align: center;
     border: none;
-    background-color: #a40000;
+    background-color: hsl(0, 100%, 40%);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     color: #fff;
@@ -128,7 +128,7 @@ li {
 
 
 .list>.delete:hover {
-    background-color: hsl(0, 100%, 40%);
+    background-color: hsl(0, 100%, 30%);
 }
 
 .list>.delete::-moz-focus-inner {
